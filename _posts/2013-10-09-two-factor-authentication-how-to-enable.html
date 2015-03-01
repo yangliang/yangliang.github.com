@@ -1,0 +1,188 @@
+---
+layout: post
+title: Two-Factor Authentication & How to Enable on SSH
+date: '2013-10-09T19:58:00.002-07:00'
+author: Kevin L
+tags: 
+modified_time: '2013-10-09T19:58:58.806-07:00'
+thumbnail: /images/post_2factor/thumb_2013-10-09-223512_378x92_scrot.png
+blogger_id: tag:blogger.com,1999:blog-5768106710687360482.post-4038673198839330124
+blogger_orig_url: http://blog.kevinlaw.info/2013/10/two-factor-authentication-how-to-enable.html
+---
+
+Converted from Blogger. Please excuse any layout errors!
+<div class="" id="magicdomid4"><span class="author-a-5z85z2kstz86zz122zdz75zrz81zz78zz122zz72zz84z">If  you ever managed a linux server, chances are you logged into it with  Secure Shell. SSH is a vital service to manage hosts remotely. There are  ways to secure this by using strong passwords and bruteforce  prevention. SSH can use public/private keys to login without a password.  Keys are a convenient and secure way of connecting to and SSH server.  Two-factor adds to that security. Personally, I use keys to login to my server, but when I'm not using keys it passes over to password &amp; a time-based code.</span>
+</div>
+<div class="" id="magicdomid5">
+    <br />
+</div>
+<div class="" id="magicdomid5">
+    <h3><br /></h3>
+</div>
+<div class="" id="magicdomid6" style="text-align: center;">
+    <h3><span class="author-a-5z85z2kstz86zz122zdz75zrz81zz78zz122zz72zz84z">A Quick Introduction to Two-Factor Authentication</span></h3>
+</div>
+<div class="" id="magicdomid7"><span class="author-a-5z85z2kstz86zz122zdz75zrz81zz78zz122zz72zz84z">Two-factor authentication provides and additional means of identifying a  user when logging into a service. It is becoming evident that just a  username &amp; password is not enough.</span>
+</div>
+<div class="" id="magicdomid8">
+    <br />
+</div>
+<div class="" id="magicdomid9" style="text-align: center;"><span class="author-a-5z85z2kstz86zz122zdz75zrz81zz78zz122zz72zz84z">Two factor would be:</span>
+</div>
+<div class="" id="magicdomid10" style="text-align: center;"><span class="author-a-5z85z2kstz86zz122zdz75zrz81zz78zz122zz72zz84z">what you know</span>
+</div>
+<div class="" id="magicdomid11" style="text-align: center;"><span class="author-a-5z85z2kstz86zz122zdz75zrz81zz78zz122zz72zz84z">what you have</span>
+</div>
+<div class="" id="magicdomid12" style="text-align: center;"><span class="author-a-5z85z2kstz86zz122zdz75zrz81zz78zz122zz72zz84z">what you are</span>
+</div>
+<div class="" id="magicdomid13" style="text-align: center;"><span class="author-a-5z85z2kstz86zz122zdz75zrz81zz78zz122zz72zz84z">-Pick two-</span>
+</div>
+<div class="" id="magicdomid15"></div>
+<div class="" id="magicdomid15" style="text-align: center;"><i><span class="author-a-5z85z2kstz86zz122zdz75zrz81zz78zz122zz72zz84z">ex.&nbsp;&nbsp; "what you know" (like a password) and "what you have" (like your phone).</span></i>
+</div>
+<div class="" id="magicdomid16">
+    <br />
+</div>
+<div class="" id="magicdomid16">
+    <br />
+</div>
+<div class="" id="magicdomid17"><span class="author-a-5z85z2kstz86zz122zdz75zrz81zz78zz122zz72zz84z">Two-factor  is generally a password and a time-dependant code. There are others, like push  messages, phone calls, asymmetric keys+push (twitter),</span>
+</div>
+<div class="" id="magicdomid18">
+    <br />
+</div>
+<div class="" id="magicdomid19"><span class="author-a-5z85z2kstz86zz122zdz75zrz81zz78zz122zz72zz84z">Two<i>-</i>factor is gaining popularity among web services. A few years ago you  had to acquire a dongle that generated a time-based code. Now with smartphones,  there are free apps to accomplish this.</span>
+</div>
+<div class="" id="magicdomid20">
+    <br />
+</div>
+<div class="" id="magicdomid21"><span class="author-a-5z85z2kstz86zz122zdz75zrz81zz78zz122zz72zz84z">Depending  on the security settings, some services require you type in a code  everytime you try to login or only when logging in from a new device.</span>
+</div>
+<div class="" id="magicdomid22">
+    <br />
+</div>
+<div class="" id="magicdomid23"><span class="author-a-5z85z2kstz86zz122zdz75zrz81zz78zz122zz72zz84z">Two-factor is not an end all solution to security. You should still use  strong passwords. Two-factor does leave room for man-in-the-middle or  man-in-the-browser attacks. Also your phone could be compromised and your two-factor could be hijacked.</span>
+</div>
+<div class="" id="magicdomid24">
+    <br />
+</div>
+<div class="" id="magicdomid25">
+    <br />
+</div>
+<div class="" id="magicdomid26" style="text-align: center;">
+    <h2><b>How to Enable Two-Factor on SSH</b></h2>
+    <div style="text-align: left;"><b>Package:</b>
+    </div>
+    <div style="text-align: left;"><code>sudo apt-get install libpam-google-authenticator<br />yaourt google-authenticator-libpam-git<br />source from: https://code.google.com/p/google-authenticator/ </code>
+    </div>
+    <div class="" id="magicdomid29" style="text-align: left;">
+        <br />
+        <div class="separator" style="clear: both; text-align: center;">
+            <a href="/images/post_2factor/2013-10-09-223512_378x92_scrot.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="96" src="/images/post_2factor/2013-10-09-223512_378x92_scrot.png" width="400" />
+            </a>
+        </div>
+        <br />
+    </div>
+    <div class="" id="magicdomid30">
+        <br />
+    </div>
+    <div class="" id="magicdomid31">Now run "google-authenticator" as the user you want to generate a key for.</div>
+    <div class="" id="magicdomid34">
+        <br />
+        <table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;">
+            <tbody>
+                <tr>
+                    <td style="text-align: center;">
+                        <a href="/images/post_2factor/2013-10-09-223712_486x194_scrot.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="158" src="/images/post_2factor/2013-10-09-223712_486x194_scrot.png" width="400" />
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tr-caption" style="text-align: center;">It even gives you a url for a nice QR code to scan.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="" id="magicdomid40">
+        <br />
+    </div>
+    <div class="" id="magicdomid41">
+        <br />
+    </div>
+    <div class="" id="magicdomid42">
+        <br />
+        <table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;">
+            <tbody>
+                <tr>
+                    <td style="text-align: center;">
+                        <a href="/images/post_2factor/Screenshot_2013-10-09-22-39-52.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="400" src="/images/post_2factor/Screenshot_2013-10-09-22-39-52.png" width="225" />
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tr-caption" style="text-align: center;">Add the code to your smartphone using the Google Authenticator app</td>
+                </tr>
+            </tbody>
+        </table>
+        <br />
+        <br />
+        <div style="text-align: left;">
+            <br />
+        </div>
+        <div style="text-align: left;">Next you have to setup Google Authenticator for SSH logins.&nbsp;</div>
+        <div style="text-align: left;">
+            <br />Open the <b>/etc/pam.d/sshd </b>file on your system&nbsp;</div>
+        <div style="text-align: left;"><b>sudo nano /etc/pam.d/sshd</b> and add the following line to the file:</div>
+        <div style="text-align: left;">
+            <blockquote><code>auth required pam_google_authenticator.so</code>
+            </blockquote>
+        </div>
+        <div style="text-align: left;">Open the <b>/etc/ssh/sshd_config</b> file, go to the <b>ChallengeResponseAuthentication</b> line, and change it to:</div>
+        <div style="text-align: left;">
+            <blockquote><code>ChallengeResponseAuthentication yes</code> </blockquote>
+            <div style="text-align: left;">
+                <blockquote>(If the <b>ChallengeResponseAuthentication</b> line doesn’t exist, add it.)</blockquote>
+            </div>
+        </div>
+        <div style="text-align: left;">Restart the SSH server, these commands depend on your distribution:</div>
+        <div style="text-align: left;">
+            <blockquote><code>sudo service ssh restart<code><br /><code>systemctl restart sshd</code></code>
+                </code>
+            </blockquote>
+        </div>
+        <br />
+        <br />
+        <div class="separator" style="clear: both; text-align: center;">
+            <a href="/images/post_2factor/2013-10-09-225125_349x61_scrot.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="55" src="/images/post_2factor/2013-10-09-225125_349x61_scrot.png" width="320" />
+            </a>
+        </div>It should work now!
+        <br />
+        <br />
+        <br />
+        <h3>Backup your Google Authenticator</h3>
+    </div>
+    <div class="" id="magicdomid46">
+        <br />
+    </div>
+    <div class="" id="magicdomid47"><span class="author-a-5z85z2kstz86zz122zdz75zrz81zz78zz122zz72zz84z">Google  Authenticator is a great app. A QR code is generated, you scan it with  your phone, then it's added to your google auth app.</span>
+    </div>
+    <div class="" id="magicdomid48">
+        <br />
+    </div>
+    <div class="" id="magicdomid49"><span class="author-a-5z85z2kstz86zz122zdz75zrz81zz78zz122zz72zz84z">To backup google auth:</span>
+    </div>
+    <div class="" id="magicdomid50"><span class="author-a-5z85z2kstz86zz122zdz75zrz81zz78zz122zz72zz84z"><code>cp /data/data/com.google.android.apps.authenticator/databases/databases /sdcard</code></span>
+    </div>
+    <div class="" id="magicdomid51">(This location may vary. But it's in the general area)</div>
+    <div class="" id="magicdomid52">
+        <br />
+    </div>
+    <div class="" id="magicdomid53">Then use sqlite to pull the data. Or cat the file.</div>
+    <div class="" id="magicdomid54"><span class="author-a-5z85z2kstz86zz122zdz75zrz81zz78zz122zz72zz84z"><code>sqlite3 ./databases</code></span>
+    </div>
+    <div class="" id="magicdomid55"><span class="author-a-5z85z2kstz86zz122zdz75zrz81zz78zz122zz72zz84z"><code>sqlite&gt; select * from accounts;</code></span>
+    </div>
+    <div class="" id="magicdomid56">
+        <br />
+    </div>
+</div>

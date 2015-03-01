@@ -1,0 +1,165 @@
+---
+layout: post
+title: Underground DNS Servers
+date: '2014-08-22T12:41:00.000-07:00'
+author: Kevin L
+tags: 
+modified_time: '2014-08-22T12:41:16.368-07:00'
+thumbnail: /images/post_undergrounddns/thumb_Screen+Shot+2014-08-11+at+1.28.57+PM.png
+blogger_id: tag:blogger.com,1999:blog-5768106710687360482.post-7917065277283624285
+blogger_orig_url: http://blog.kevinlaw.info/2014/08/underground-dns-servers.html
+---
+
+Converted from Blogger. Please excuse any layout errors!
+
+This is just something I've wanted to look into for a while now. I figured I'd write about what I found.
+<br />
+<br />DNS is a service that resolves hostnames to IP addresses. It is convenient because we do not want to have to remember every IP address for websites we want to visit.
+<br />
+<br />A root authority exists that manages registered domains. The official DNS root is administered by the Internet Corporation for Assigned Names and Numbers (ICANN).
+<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;">
+    <tbody>
+        <tr>
+            <td style="text-align: center;">
+                <a href="/images/post_undergrounddns/Screen+Shot+2014-08-11+at+1.28.57+PM.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" src="/images/post_undergrounddns/Screen+Shot+2014-08-11+at+1.28.57+PM.png" height="53" width="400" />
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td class="tr-caption" style="text-align: center;">DNS resolved Google.com to its IP</td>
+        </tr>
+    </tbody>
+</table>Here is the natural flow of a dns request:
+<br />Request "Google.com" =&gt; local dns =&gt; Root nameserver =&gt; com. nameserver =&gt; google.com nameserver
+<br />
+<br />.com, .org, .net, .gov, etc... are all registered Top-Level Domains (TLDs) that ICANN recognizes.
+<br />You can pay to lease a domain like "pickles.com" and everyone on the official DNS would recognize that. Your ISP will generally add their dns servers to your connection which will query ICANN. Google's DNS servers 8.8.8.8 and 8.8.4.4 do the same as well.
+<br />
+<br />A few<a href="http://en.wikipedia.org/wiki/Alternative_DNS_root" target="_blank"> alternative dns root servers </a>exist, and you can point your workstation to them easily.
+<br />
+<br />
+<br />But what about running your own DNS root nameserver? You could have any domain you want. You could have services respond on the domains you specify. The problem is that you would run into many conflicts with existing registered domains.
+<br />A solution is to create your own TLD like .sekretclub or .pickles by running your own dns
+<br />
+<br /><b>Note: Companies will usually run an internal DNS server for intranet services, like "wiki.lan" or "intranet.local".</b>
+<br />
+<br />Malicious or private websites can choose to listen on domains that only exist on underground DNS servers. The DNS server can be a word-of-mouth IP address or work through some sort of invite system.
+<br />
+<br />
+<h3 style="text-align: center;">Proof of Concept - Underground Community</h3>
+<div style="text-align: left;">Machine - Debian 7 x64 VPS</div>
+<div style="text-align: left;">Linux 3.2.0-4-amd64 #1 SMP Debian 3.2.54-2 x86_64 GNU/Linux
+    <br />Services - bind9 dnsutils </div>
+<div style="text-align: left;">
+    <br />
+</div>
+<div style="text-align: left;">
+    <br />
+</div>
+<div style="text-align: left;">I <a href="http://jackal777.wordpress.com/2013/11/19/custom-tld-for-local-network/" target="_blank">created</a> the TLD ".sekretclub" which does not exist on ICANN's regulated list of TLD's.</div>
+<div style="text-align: left;">
+    <br />
+</div>
+<div style="text-align: left;">
+    <br />
+</div>
+<table cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;">
+    <tbody>
+        <tr>
+            <td style="text-align: center;">
+                <a href="/images/post_undergrounddns/Screen+Shot+2014-08-11+at+3.31.48+PM.png" imageanchor="1" style="clear: left; margin-bottom: 1em; margin-left: auto; margin-right: auto;"><img border="0" src="/images/post_undergrounddns/Screen+Shot+2014-08-11+at+3.31.48+PM.png" height="284" width="320" />
+                </a>
+            </td>
+            <td style="text-align: center;">
+                <a href="/images/post_undergrounddns/Screen+Shot+2014-08-11+at+3.32.37+PM.png" imageanchor="1" style="clear: right; margin-bottom: 1em; margin-left: auto; margin-right: auto;"><img border="0" src="/images/post_undergrounddns/Screen+Shot+2014-08-11+at+3.32.37+PM.png" height="229" width="320" />
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td class="tr-caption" style="text-align: center;">Bind is super simple to setup and configure</td>
+            <td class="tr-caption" style="text-align: center;">Querying the server responds with the IP of the domain</td>
+        </tr>
+    </tbody>
+</table>
+<div style="text-align: left;">Then I added some domains to that, such as "forums.sekretclub", "hiddenwiki.sekretclub", "markets.sekretclub"</div>
+<div style="text-align: left;">
+    <br />
+</div>
+<table cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;">
+    <tbody>
+        <tr>
+            <td style="text-align: center;">
+                <a href="/images/post_undergrounddns/Screen+Shot+2014-08-11+at+3.19.31+PM.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" src="/images/post_undergrounddns/Screen+Shot+2014-08-11+at+3.19.31+PM.png" height="200" width="400" />
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td class="tr-caption" style="text-align: center;">Super Sekret forums hosted only on this domain</td>
+        </tr>
+        <tr></tr>
+    </tbody>
+</table>
+<div style="text-align: left;">
+    <br />The servers that have these IP's to are set to show the webpage only when that domain is requested.</div>
+<div style="text-align: left;">
+    <br />
+</div>
+<div style="text-align: left;">It is very easy to add DNS servers to your workstation, so I simply added the IP address of the DNS server I created.</div>
+<h4 style="text-align: center;">Security for the Club </h4>
+<div style="text-align: left;">We want this DNS to be invite only, but the DNS protocol does not allow for this feature</div>
+<div style="text-align: left;">A solution is to have a database of whitelisted IP addresses that the DNS server includes in its firewall.</div>
+<div style="text-align: left;">
+    <br />It would be easy to create a register page with invite codes to be included on the whitelist.</div>
+<div style="text-align: left;">The DNS server then becomes the gateway into the underground services. The servers running the services should have the same firewall whitelist system in place. That way if someone knows the IP address and domain the service is listening on, they can't manually edit their /etc/hosts file to bypass the DNS server altogether.</div>This script on a cron or something would get the job done:
+<br />
+<div class="gistLoad" data-id="3194f107351cf4a32b75" id="gist-3194f107351cf4a32b75">Loading .... </div>
+<br />
+<div style="text-align: left;">
+    <br />
+</div>
+<div style="text-align: left;">If the main DNS server is compromised, then the entire database of domains and IP's would be leaked. This single point of failure is definitely not ideal. A secondary DNS server could be created, but the main records would still be managed by one person.</div>
+<div style="text-align: left;">
+    <br />
+</div>
+<div style="text-align: left;">If the service is infiltrated, then the server operators can migrate to new IP's and just update the dns entry. The DNS gateway can switch to a new IP as well.</div>
+<div style="text-align: left;">
+    <br />
+</div>
+<h3 style="text-align: center;">&nbsp;Proof of Concept - Hidden Malware C2 Servers</h3>
+<div style="text-align: left;">Malware calls back to control. That is how they receive commands, exfiltrate data, etc...</div>
+<div style="text-align: left;">
+    <br />Since hardcoding IP addresses into malware is generally a bad idea, most use domain names now. It is still easy to figure out what domains malware is calling out to, but it at least gives the attacker the opportunity to change the IP behind the domain. Instead of paying for domains, malware authors will generally just use free subdomains using services like no-ip.org.&nbsp;</div>
+<div style="text-align: left;">
+    <br />
+</div>
+<div style="text-align: left;">The problem is that those domains are all still regulated by ICANN, and can be taken down or tracked with a request from an authority. </div>
+<div style="text-align: left;">
+    <br />
+</div>
+<div style="text-align: left;">Some adware would change a user's DNS settings to point to malicious IP's when looking up domain names: </div>
+<blockquote class="tr_bq">
+    <div style="text-align: left;">"The botnet operated by Rove Digital altered user DNS settings, pointing victims to malicious DNS in data centers in Estonia, New York, and Chicago. The malicious DNS servers would give fake, malicious answers, altering user searches, and promoting fake and dangerous products. Because every web search starts with DNS, the malware showed users an altered version of the Internet." http://www.dcwg.org/ </div>
+</blockquote>
+<div style="text-align: left;">Malware sometimes uses their own DNS servers to call back to domains that would be very difficult to track since they are not on ICANN's registry. The most an antivirus solution can do is alert if the user's DNS settings changed.</div>
+<div style="text-align: left;">
+    <br />
+</div>
+<div style="text-align: left;">
+    <br />
+</div>
+<div style="text-align: left;">
+    <br />
+</div>
+<div style="text-align: left;">
+    <br />
+</div>
+<div style="text-align: left;">
+    <br />
+</div>
+<div style="text-align: left;">
+    <br />
+</div>
+<div style="text-align: left;"></div>
+<script src="https://raw.github.com/moski/gist-Blogger/master/public/gistLoader.js" type="text/javascript"></script>

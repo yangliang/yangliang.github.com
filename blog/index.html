@@ -1,0 +1,16 @@
+---
+layout: blog
+---
+<div id="main">
+	<div class="container">
+	    <h3>Blog Posts</h3>
+
+		<table>
+		  {% for post in site.posts %}
+			<tr>
+			      <td align="left"><img src="{{ post.thumbnail }}"></td><td align="left" style="vertical-align:middle"> {{ post.date | date: "%-d %B %Y" }}</td><td align="left" style="vertical-align:middle"><a href="{{ post.url }}">{{ post.title }}</a></td>
+			</tr>
+		  {% endfor %}
+		</table>
+	</div>
+</div>

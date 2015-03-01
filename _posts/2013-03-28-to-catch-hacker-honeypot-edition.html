@@ -1,0 +1,155 @@
+---
+layout: post
+title: 'To Catch a Hacker: Honeypot Edition'
+date: '2013-03-28T18:42:00.001-07:00'
+author: Kevin L
+tags:
+- Case Study
+- Incident Response
+- Honeypot
+modified_time: '2013-03-29T11:11:20.748-07:00'
+thumbnail: /images/post_catchhackerhoneypot/thumb_initial.png
+blogger_id: tag:blogger.com,1999:blog-5768106710687360482.post-2726470114479804902
+blogger_orig_url: http://blog.kevinlaw.info/2013/03/to-catch-hacker-honeypot-edition.html
+---
+
+Converted from Blogger. Please excuse any layout errors!
+<div class="separator" style="clear: both; text-align: center;">
+    <a href="/images/post_catchhackerhoneypot/wget.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;">
+        <br />
+    </a>
+</div>
+<div style="text-align: center;">
+    <blockquote class="tr_bq"><span style="font-family: Arial,Helvetica,sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp; I've been running a Kippo Honeypot for about a month now on my CentOS VPS. For the those of you who do not know what this is, check out: </span>
+    </blockquote>
+</div>
+<div style="text-align: center;">&nbsp;<a href="http://en.wikipedia.org/wiki/Honeypot_%28computing%29" target="_blank">Honeypot wiki</a>
+</div>
+<div style="text-align: center;"><a href="http://code.google.com/p/kippo/" target="_blank">Kippo</a>&nbsp;</div>
+<div style="text-align: center;"><a href="http://dev.mattgfeller.com/kippo-graph.php" target="_blank">Active honeypot statistics</a>&nbsp;</div>
+<div style="text-align: center;">
+    <blockquote class="tr_bq"><span style="font-family: Arial,Helvetica,sans-serif;">I thought it would be a good experiment to see how many times it would get logged into. I received many blind logins for a while now (Log in and out like an automated bot). I was checking my logs out and noticed a very long entry file. Upon further investigation, what I found was quite surprising.</span>
+    </blockquote>
+</div>
+<div class="separator" style="clear: both; text-align: center;"></div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;">
+    <tbody>
+        <tr>
+            <td style="text-align: center;">
+                <a href="/images/post_catchhackerhoneypot/initial.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="84" src="/images/post_catchhackerhoneypot/initial.png" width="640" />
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td class="tr-caption" style="text-align: center;">I changed IP's and URL's to mask attacker's identity</td>
+        </tr>
+    </tbody>
+</table>
+<br />
+<div class="separator" style="clear: both; text-align: center;"></div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;">
+    <tbody>
+        <tr>
+            <td style="text-align: center;">
+                <a href="/images/post_catchhackerhoneypot/wget.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="100" src="/images/post_catchhackerhoneypot/wget.png" width="640" />
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td class="tr-caption" style="text-align: center;">Trying to install perl and run his scripts ;)</td>
+        </tr>
+    </tbody>
+</table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;">
+    <tbody>
+        <tr>
+            <td style="text-align: center;">
+                <a href="/images/post_catchhackerhoneypot/adduser.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="142" src="/images/post_catchhackerhoneypot/adduser.png" width="640" />
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td class="tr-caption" style="text-align: center;">Adding users , before finding out that you cannot add users in kippo</td>
+        </tr>
+    </tbody>
+</table>
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;">
+    <tbody>
+        <tr>
+            <td style="text-align: center;"><img border="0" height="148" src="/images/post_catchhackerhoneypot/contents.png" style="margin-left: auto; margin-right: auto;" width="400" />
+            </td>
+        </tr>
+        <tr>
+            <td class="tr-caption" style="text-align: center;">Contents of the piata_sshbrute.tar.gz</td>
+            <td class="tr-caption" style="text-align: center;">
+                <br />
+            </td>
+            <td class="tr-caption" style="text-align: center;">
+                <br />
+            </td>
+        </tr>
+    </tbody>
+</table>
+<div class="separator" style="clear: both; text-align: center;">The attacker downloaded a mass ssh bruteforcer called piata to my honeypot along with a very large password list used to dictionary attack logins. This is probably how the attacker got into my honeypot in the first place.</div>
+<div class="separator" style="clear: both; text-align: center;">
+    <br />
+</div>
+<div class="separator" style="clear: both; text-align: center;">&nbsp; I went ahead and visited the url that he was downloading the scripts from. The base url seems to be a compromised website with a hidden directory he made. The files are logs of compromised systems, along with various php shells, irc bots, and netcat scripts. As you can see from the logs, the attacker has not compromised&nbsp; many systems.</div>
+<table cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;">
+    <tbody>
+        <tr>
+            <td style="text-align: center;">
+                <a href="/images/post_catchhackerhoneypot/listing.png" imageanchor="1" style="clear: left; margin-bottom: 1em; margin-left: auto; margin-right: auto;"><img border="0" height="640" src="/images/post_catchhackerhoneypot/listing.png" width="171" />
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td class="tr-caption" style="text-align: center;">Contents of his webserver</td>
+        </tr>
+    </tbody>
+</table>
+<div class="separator" style="clear: both; text-align: center;">
+    <br />
+</div>
+<div class="separator" style="clear: both; text-align: center;">A few examples of the many different scripts found in the directory:</div>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+    <a href="/images/post_catchhackerhoneypot/ircbot1.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="192" src="/images/post_catchhackerhoneypot/ircbot1.png" width="320" />
+    </a>
+</div>
+<br />
+<div class="separator" style="clear: both; text-align: center;"></div>
+<div class="separator" style="clear: both; text-align: center;">
+    <a href="/images/post_catchhackerhoneypot/ircbot2.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="320" src="/images/post_catchhackerhoneypot/ircbot2.png" width="266" />
+    </a>
+</div>
+<a href="/images/post_catchhackerhoneypot/nc_bot.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="205" src="/images/post_catchhackerhoneypot/nc_bot.png" width="400" />
+</a>
+<br />
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+    <a href="/images/post_catchhackerhoneypot/shell_bot.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="232" src="/images/post_catchhackerhoneypot/shell_bot.png" width="400" />
+    </a>
+</div>
+<br />
+<div style="text-align: center;">Each script is very generic and seems like it was just downloaded from a warez website and modified to the attacker's needs. Some php shells are renamed to .jpeg extensions to be able to be uploaded through an upload form and then executed. But nothing was encrypted or obfuscated!</div>
+<br />I got crafty and found the irc server the attacker was using to command all of the bots. I joined the channel and found a handful of bots awaiting command:
+<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;">
+    <tbody>
+        <tr>
+            <td style="text-align: center;">
+                <a href="/images/post_catchhackerhoneypot/irc.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="434" src="/images/post_catchhackerhoneypot/irc.png" width="640" />
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td class="tr-caption" style="text-align: center;">Tanking a Command and Control IRC server (oops did I leave the server address up?)</td>
+        </tr>
+    </tbody>
+</table>
+<div style="text-align: center;">It was awesome that an actual person connected to my honeypot and tried to compromise my system. The techniques the attacker used were very generic, like adding a user with a system name and saving files to a hidden temp folder. The attacker also used many scripts that could be found on the internet with simple Google searches. The problem is that despite the fact that he used easily accessible scripts, they still work! </div>

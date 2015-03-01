@@ -1,1 +1,12 @@
-baseurl: /yangliang.github.com
+# Site settings
+title: Liang Yang (杨亮)
+email: yangliang@vip.qq.com
+description: > # this means to ignore newlines until "baseurl:"
+  Everything about Liang Yang
+baseurl: "yangliang.github.com" # the subpath of your site, e.g. /blog/
+url: "http://yangliang.github.com" # the base hostname & protocol for your site
+twitter_username: 
+github_username:  yangliang
+permalink: /blog/:title
+
+markdown: redcarpet
