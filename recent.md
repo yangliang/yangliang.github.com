@@ -11,3 +11,5 @@
 1. :white_check_mark: Zhen Peng et al. Graph Representation Learning via Graphical Mutual Information Maximization (WWW20) ([PDF](https://arxiv.org/pdf/2002.01169.pdf)) 	
 1. :white_check_mark: Muhan Zhang, Yixin Chen. Inductive Matrix Completion Based on Graph Neural Networks (ICLR20) ([PDF](https://arxiv.org/pdf/1904.12058.pdf))
 1. :white_check_mark: Ruochi Zhang, Yuesong Zou, Jian Ma. Hyper-SAGNN: a self-attention based graph neural network for hypergraphs (ICLR20) ([PDF](https://arxiv.org/pdf/1911.02613.pdf))
+1. :o: Ben Poole et al. On Variational Bounds of Mutual Information (ICML19) ([PDF](https://arxiv.org/pdf/1905.06922.pdf))
+1. :o: Lingpeng Kong et al. A Mutual Information Maximization Perspective of Language Representation Learning (ICLR20) ([PDF](https://arxiv.org/pdf/1905.06922.pdf))
