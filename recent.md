@@ -1,5 +1,5 @@
 # Reading Lists
-1. :o: Hongwei Wang, Jure Leskovec. Unifying Graph Convolutional Neural Networks and Label Propagation. （[PDF](https://arxiv.org/pdf/2002.06755.pdf))
+1. :white_check_mark: Hongwei Wang, Jure Leskovec. Unifying Graph Convolutional Neural Networks and Label Propagation. （[PDF](https://arxiv.org/pdf/2002.06755.pdf))
 1. :white_check_mark: Jiwoong Park et al. Symmetric Graph Convolutional Autoencoder for Unsupervised Graph Representation Learning. (ICCV19) （[PDF](https://arxiv.org/pdf/1908.02441.pdf)) 	
 1. :white_check_mark: Guohao Li et al. DeepGCNs: Making GCNs Go as Deep as CNNs. (ICCV19) （[PDF](https://arxiv.org/pdf/1910.06849.pdf)) 
 1. :white_check_mark: Jianxin Ma, Peng Cui, Kun Kuang, Xin Wang, Wenwu Zhu. Disentangled Graph Convolutional Networks. (ICML19) （[PDF](http://proceedings.mlr.press/v97/ma19a/ma19a.pdf)) 	
@@ -12,4 +12,7 @@
 1. :white_check_mark: Muhan Zhang, Yixin Chen. Inductive Matrix Completion Based on Graph Neural Networks (ICLR20) ([PDF](https://arxiv.org/pdf/1904.12058.pdf))
 1. :white_check_mark: Ruochi Zhang, Yuesong Zou, Jian Ma. Hyper-SAGNN: a self-attention based graph neural network for hypergraphs (ICLR20) ([PDF](https://arxiv.org/pdf/1911.02613.pdf))
 1. :o: Ben Poole et al. On Variational Bounds of Mutual Information (ICML19) ([PDF](https://arxiv.org/pdf/1905.06922.pdf))
-1. :o: Lingpeng Kong et al. A Mutual Information Maximization Perspective of Language Representation Learning (ICLR20) ([PDF](https://arxiv.org/pdf/1905.06922.pdf))
+1. :white_check_mark: Lingpeng Kong et al. A Mutual Information Maximization Perspective of Language Representation Learning (ICLR20) ([PDF](https://arxiv.org/pdf/1905.06922.pdf))
+1. :o: Alex Alemi et al. Fixing a Broken ELBO. (ICML18) ([PDF](https://arxiv.org/pdf/1711.00464.pdf))
+1. :o: Chenhui Deng et al. GraphZoom: A Multi-level Spectral Approach for Accurate and Scalable Graph Embedding (ICLR20) ([PDF](https://arxiv.org/pdf/1910.02370.pdf))
+1. :o: Nathan De Lara, Thomas Bonald. Spectral Embedding of Regularized Block Models. (ICLR20) ([PDF](https://arxiv.org/pdf/1912.10903.pdf))
