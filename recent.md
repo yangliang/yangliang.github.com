@@ -16,3 +16,4 @@
 1. :o: Alex Alemi et al. Fixing a Broken ELBO. (ICML18) ([PDF](https://arxiv.org/pdf/1711.00464.pdf))
 1. :o: Chenhui Deng et al. GraphZoom: A Multi-level Spectral Approach for Accurate and Scalable Graph Embedding (ICLR20) ([PDF](https://arxiv.org/pdf/1910.02370.pdf))
 1. :o: Nathan De Lara, Thomas Bonald. Spectral Embedding of Regularized Block Models. (ICLR20) ([PDF](https://arxiv.org/pdf/1912.10903.pdf))
+1. :o: Asano YM., Rupprecht C., Vedaldi A. Self-labelling via Simultaneous Clustering and Representation Learning (ICLR20) ([PDF](https://arxiv.org/pdf/1911.05371.pdf))
