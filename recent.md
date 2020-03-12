@@ -17,5 +17,6 @@
 1. :o: Chenhui Deng et al. GraphZoom: A Multi-level Spectral Approach for Accurate and Scalable Graph Embedding (ICLR20) ([PDF](https://arxiv.org/pdf/1910.02370.pdf))
 1. :o: Nathan De Lara, Thomas Bonald. Spectral Embedding of Regularized Block Models. (ICLR20) ([PDF](https://arxiv.org/pdf/1912.10903.pdf))
 1. :white_check_mark: Asano YM., Rupprecht C., Vedaldi A. Self-labelling via Simultaneous Clustering and Representation Learning (ICLR20) ([PDF](https://arxiv.org/pdf/1911.05371.pdf))
-1. :o: Kai Zhang, Yaokang Zhu, Jun Wang, Jie Zhang. Adaptive Structural Fingerprints for Graph Attention Networks (ICLR20) ([PDF](https://openreview.net/pdf?id=BJxWx0NYPr))
+1. :white_check_mark: Kai Zhang, Yaokang Zhu, Jun Wang, Jie Zhang. Adaptive Structural Fingerprints for Graph Attention Networks (ICLR20) ([PDF](https://openreview.net/pdf?id=BJxWx0NYPr))
 1. :o: Michael Tschannen et al. On Mutual Information Maximization for Representation Learning  (ICLR20) ([PDF](https://arxiv.org/pdf/1907.13625.pdf))
+1. :white_check_mark: Chunyan Xu et al. Graph inference learning for semi-supervised classification (ICLR20) ([PDF](https://arxiv.org/pdf/2001.06137.pdf))
