@@ -25,6 +25,6 @@
 1. :o: David McAllester, Karl Stratos. Formal Limitations on the Measurement of Mutual Information (AISTATS20) ([PDF](http://www.karlstratos.com/publications/aistats20limit.pdf))
 1. :white_check_mark: Jiaming Song, Stefano Ermon. Understanding the Limitations of Variational Mutual Information Estimators (ICLR20) ([PDF](https://arxiv.org/pdf/1910.06222.pdf))
 1. :white_check_mark: Philip Bachman, R Devon Hjelm, William Buchwalter. Learning Representations by Maximizing Mutual Information Across Views (NIPS19) ([PDF](https://arxiv.org/pdf/1906.00910.pdf))
-1. :o: Victor Garcia Satorras, Max Welling. Neural Enhanced Belief Propagation on Factor Graphs (ICML20) (NIPS19) ([PDF](https://arxiv.org/pdf/2003.01998.pdf))
+1. :o: Victor Garcia Satorras, Max Welling. Neural Enhanced Belief Propagation on Factor Graphs (ICML20) ([PDF](https://arxiv.org/pdf/2003.01998.pdf))
 1. :o: Thomas Kipf, Elise van der Pol, Max Welling. Contrastive Learning of Structured World Models (ICLR20) ([PDF]())
 
