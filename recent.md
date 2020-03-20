@@ -25,6 +25,13 @@
 1. :o: David McAllester, Karl Stratos. Formal Limitations on the Measurement of Mutual Information (AISTATS20) ([PDF](http://www.karlstratos.com/publications/aistats20limit.pdf))
 1. :white_check_mark: Jiaming Song, Stefano Ermon. Understanding the Limitations of Variational Mutual Information Estimators (ICLR20) ([PDF](https://arxiv.org/pdf/1910.06222.pdf))
 1. :white_check_mark: Philip Bachman, R Devon Hjelm, William Buchwalter. Learning Representations by Maximizing Mutual Information Across Views (NIPS19) ([PDF](https://arxiv.org/pdf/1906.00910.pdf))
-1. :o: Victor Garcia Satorras, Max Welling. Neural Enhanced Belief Propagation on Factor Graphs (ICML20) ([PDF](https://arxiv.org/pdf/2003.01998.pdf))
-1. :o: Thomas Kipf, Elise van der Pol, Max Welling. Contrastive Learning of Structured World Models (ICLR20) ([PDF]())
+1. :white_check_mark: Victor Garcia Satorras, Max Welling. Neural Enhanced Belief Propagation on Factor Graphs (ICML20) ([PDF](https://arxiv.org/pdf/2003.01998.pdf))
+1. :white_check_mark: Thomas Kipf, Elise van der Pol, Max Welling. Contrastive Learning of Structured World Models (ICLR20) ([PDF](https://arxiv.org/pdf/1911.12247.pdf))
+1. :white_check_mark: Lingxiao Zhao, Leman Akoglu. PairNorm: Tackling Oversmoothing in GNNs (ICLR20) ([PDF](https://openreview.net/pdf?id=rkecl1rtwB))
+1. :white_check_mark: Yu Rong et al. DropEdge: Towards Deep Graph Convolutional Networks on Node Classification (ICLR20) ([PDF](https://arxiv.org/pdf/1907.10903.pdf))
+1. :white_check_mark: Amir Hosein Khasahmadi et al. Memory-Based Graph Networks (ICLR20) ([PDF](https://arxiv.org/pdf/2002.09518.pdf))
+1. :white_check_mark: Petar Veličković, Rex Ying et al. Neural Execution of Graph Algorithms (ICLR20) ([PDF](https://arxiv.org/pdf/1910.10593.pdf))
+1. :o: Victor Garcia Satorras, Max Welling, Zeynep Akata. Combining Generative and Discriminative Models for Hybrid Inference (NIPS19) ([PDF](https://arxiv.org/pdf/1906.02547.pdf))
+1. :o: Renjie Liao et al. LanczosNet: Multi-Scale Deep Graph Convolutional Networks (ICLR19) ([PDF](https://arxiv.org/pdf/1901.01484.pdf))
+
 
