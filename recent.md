@@ -32,6 +32,9 @@
 1. :white_check_mark: Amir Hosein Khasahmadi et al. Memory-Based Graph Networks (ICLR20) ([PDF](https://arxiv.org/pdf/2002.09518.pdf))
 1. :white_check_mark: Petar Veličković, Rex Ying et al. Neural Execution of Graph Algorithms (ICLR20) ([PDF](https://arxiv.org/pdf/1910.10593.pdf))
 1. :o: Victor Garcia Satorras, Max Welling, Zeynep Akata. Combining Generative and Discriminative Models for Hybrid Inference (NIPS19) ([PDF](https://arxiv.org/pdf/1906.02547.pdf))
-1. :o: Renjie Liao et al. LanczosNet: Multi-Scale Deep Graph Convolutional Networks (ICLR19) ([PDF](https://arxiv.org/pdf/1901.01484.pdf))
+1. :white_check_mark: Renjie Liao et al. LanczosNet: Multi-Scale Deep Graph Convolutional Networks (ICLR19) ([PDF](https://arxiv.org/pdf/1901.01484.pdf))
+1. :white_check_mark: Sitao Luan et al. Break the Ceiling: Stronger Multi-scale Deep Graph Convolutional Networks (NIPS19)  ([PDF](https://arxiv.org/pdf/1906.02174.pdf))
+1. :white_check_mark: Kenta Oono, Taiji Suzuki. Graph Neural Networks Exponentially Lose Expressive Power for Node Classification (ICLR19) ([PDF](https://openreview.net/pdf?id=S1ldO2EFPr))
+
 
 
