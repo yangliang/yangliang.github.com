@@ -1,4 +1,14 @@
-# Reading Lists
+# Reading List on GNNs for Traffic Forecasting and LBSNs
+1. Diffusion convolutional recurrent neural network: Data-driven traffic forecasting (ICLR18)
+1. Spatio-Temporal Graph Convolutional Networks: A Deep Learning Framework for Traffic Forecasting (IJCAI18)
+1. Graph WaveNet for Deep Spatial-temporal Graph Modeling (IJCAI19)
+1. Dynamic Spatial-Temporal Graph Convolutional Neural Networks for Traffic Forecasting (AAAI19)
+1. GMAN: A Graph Multi-Attention Network for Traffic Prediction (AAAI20)
+1. STGRAT: A Spatio-Temporal Graph Attention Network for Traffic Forecasting (AAAI20)
+1. ST-UNet: A Spatio-Temporal U-Network for Graph-structured Time Series Modeling
+
+
+# Reading List on GNNs
 1. :white_check_mark: Hongwei Wang, Jure Leskovec. Unifying Graph Convolutional Neural Networks and Label Propagation. （[PDF](https://arxiv.org/pdf/2002.06755.pdf))
 1. :white_check_mark: Jiwoong Park et al. Symmetric Graph Convolutional Autoencoder for Unsupervised Graph Representation Learning. (ICCV19) （[PDF](https://arxiv.org/pdf/1908.02441.pdf)) 	
 1. :white_check_mark: Guohao Li et al. DeepGCNs: Making GCNs Go as Deep as CNNs. (ICCV19) （[PDF](https://arxiv.org/pdf/1910.06849.pdf)) 
@@ -35,6 +45,9 @@
 1. :white_check_mark: Renjie Liao et al. LanczosNet: Multi-Scale Deep Graph Convolutional Networks (ICLR19) ([PDF](https://arxiv.org/pdf/1901.01484.pdf))
 1. :white_check_mark: Sitao Luan et al. Break the Ceiling: Stronger Multi-scale Deep Graph Convolutional Networks (NIPS19)  ([PDF](https://arxiv.org/pdf/1906.02174.pdf))
 1. :white_check_mark: Kenta Oono, Taiji Suzuki. Graph Neural Networks Exponentially Lose Expressive Power for Node Classification (ICLR19) ([PDF](https://openreview.net/pdf?id=S1ldO2EFPr))
+1. :o: Da Xu et al. Generative Graph Convolutional Network for Growing Graphs (ICASSP19) ([PDF](https://arxiv.org/pdf/1903.02640.pdf))
+1. :o: Da Xu et al. Self-attention with Functional Time Representation Learning (NIPS19) ([PDF](https://arxiv.org/pdf/1911.12864.pdf))
+1. :o: Da Xu et al. Inductive Representation Learning on Temporal Graphs (ICLR19) ([PDF](https://arxiv.org/pdf/2002.07962.pdf))
 
 
 
