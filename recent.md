@@ -1,11 +1,16 @@
-# Reading List on GNNs for Traffic Forecasting and LBSNs
-1. Diffusion convolutional recurrent neural network: Data-driven traffic forecasting (ICLR18)
-1. Spatio-Temporal Graph Convolutional Networks: A Deep Learning Framework for Traffic Forecasting (IJCAI18)
-1. Graph WaveNet for Deep Spatial-temporal Graph Modeling (IJCAI19)
-1. Dynamic Spatial-Temporal Graph Convolutional Neural Networks for Traffic Forecasting (AAAI19)
-1. GMAN: A Graph Multi-Attention Network for Traffic Prediction (AAAI20)
-1. STGRAT: A Spatio-Temporal Graph Attention Network for Traffic Forecasting (AAAI20)
+# Reading List on GNNs for Traffic Forecasting
+1. Diffusion convolutional recurrent neural network: Data-driven traffic forecasting (ICLR18) （[CODE](https://github.com/liyaguang/DCRNN)) 
+1. Spatio-Temporal Graph Convolutional Networks: A Deep Learning Framework for Traffic Forecasting (IJCAI18) （[CODE](https://github.com/VeritasYin/STGCN_IJCAI-18))
+1. Graph WaveNet for Deep Spatial-temporal Graph Modeling (IJCAI19) （[CODE](https://github.com/nnzhan/Graph-WaveNet))
+1. Incrementally Improving Graph WaveNet Performance on Traffic Prediction （[CODE](https://github.com/sshleifer/Graph-WaveNet))	
+1. Dynamic Spatial-Temporal Graph Convolutional Neural Networks for Traffic Forecasting (AAAI19) （[CODE]())
+1. GMAN: A Graph Multi-Attention Network for Traffic Prediction (AAAI20) （[CODE](https://github.com/zhengchuanpan/GMAN))
+1. STGRAT: A Spatio-Temporal Graph Attention Network for Traffic Forecasting (AAAI20) （[CODE]())
+1. Spatio-Temporal Deep Graph Infomax 
 1. ST-UNet: A Spatio-Temporal U-Network for Graph-structured Time Series Modeling
+
+
+# Reading List on POI Recommendation ([LIST](https://github.com/DeepGraphLearning/RecommenderSystems/blob/master/readingList.md))
 
 
 # Reading List on GNNs
