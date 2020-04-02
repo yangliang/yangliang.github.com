@@ -8,6 +8,7 @@
 1. STGRAT: A Spatio-Temporal Graph Attention Network for Traffic Forecasting (AAAI20) （[CODE]())
 1. Spatio-Temporal Deep Graph Infomax 
 1. ST-UNet: A Spatio-Temporal U-Network for Graph-structured Time Series Modeling
+1. Attention Based Spatial-Temporal Graph Convolutional Networks for Traffic Flow Forecasting (AAAI19)
 
 
 # Reading List on POI Recommendation ([LIST](https://github.com/DeepGraphLearning/RecommenderSystems/blob/master/readingList.md))
@@ -51,9 +52,15 @@
 1. :white_check_mark: Sitao Luan et al. Break the Ceiling: Stronger Multi-scale Deep Graph Convolutional Networks (NIPS19)  ([PDF](https://arxiv.org/pdf/1906.02174.pdf))
 1. :white_check_mark: Kenta Oono, Taiji Suzuki. Graph Neural Networks Exponentially Lose Expressive Power for Node Classification (ICLR19) ([PDF](https://openreview.net/pdf?id=S1ldO2EFPr))
 1. :o: Da Xu et al. Generative Graph Convolutional Network for Growing Graphs (ICASSP19) ([PDF](https://arxiv.org/pdf/1903.02640.pdf))
-1. :white_check_mark: Da Xu et al. Self-attention with Functional Time Representation Learning (NIPS19) ([PDF](https://arxiv.org/pdf/1911.12864.pdf))
-1. :white_check_mark: Da Xu et al. Inductive Representation Learning on Temporal Graphs (ICLR19) ([PDF](https://arxiv.org/pdf/2002.07962.pdf))
+1. :o: Da Xu et al. Self-attention with Functional Time Representation Learning (NIPS19) ([PDF](https://arxiv.org/pdf/1911.12864.pdf))
+1. :o: Da Xu et al. Inductive Representation Learning on Temporal Graphs (ICLR19) ([PDF](https://arxiv.org/pdf/2002.07962.pdf))
 1. :white_check_mark: Alexander A. Alemi. Deep Variational Information Bottleneck (ICLR17) ([PDF](https://arxiv.org/pdf/1612.00410.pdf))
 1. :white_check_mark: Marco Federici et al. Learning Robust Representations via Multi-View Information Bottleneck (ICLR20) ([PDF](https://openreview.net/pdf?id=B1xwcyHFDr))
 1. :white_check_mark: Qi Wang et al. Deep Multi-view Information Bottleneck (SDM19) ([PDF](https://epubs.siam.org/doi/pdf/10.1137/1.9781611975673.5))
+1. :white_check_mark: Andrei Zanfir, Cristian Sminchisescu. Deep Learning of Graph Matching (CVPR18) ([PDF](http://openaccess.thecvf.com/content_cvpr_2018/papers/Zanfir_Deep_Learning_of_CVPR_2018_paper.pdf))
+1. :white_check_mark: Runzhong Wang, Junchi Yan, Xiaokang Yang. Learning Combinatorial Embedding Networks for Deep Graph Matching （ICCV19) ([PDF](https://arxiv.org/pdf/1904.00597.pdf))
+1. :white_check_mark: Hongteng Xu et al. Gromov-Wasserstein Learning for Graph Matching and Node Embedding （ICML19） ([PDF](https://arxiv.org/pdf/1901.06003.pdf))
+1. :white_check_mark: Hongteng Xu et al. Scalable Gromov-Wasserstein Learning for Graph Partitioning and Matching (NIPS19) ([PDF](https://arxiv.org/pdf/1905.07645v1.pdf))	
+1. :white_check_mark: Tianshu Yu et al. Learning Deep Graph Matching with Channel-independent Embedding and Hungarian Attention (ICLR20) ([PDF](https://openreview.net/forum?id=rJgBd2NYPH))
+1. :white_check_mark: Matthias Fey et al. Deep Graph Matching Consensus (ICLR20) ([PDF](https://openreview.net/forum?id=HyeJf1HKvS))
 
