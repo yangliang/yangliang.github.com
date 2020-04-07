@@ -9,6 +9,8 @@
 1. Spatio-Temporal Deep Graph Infomax 
 1. ST-UNet: A Spatio-Temporal U-Network for Graph-structured Time Series Modeling
 1. Attention Based Spatial-Temporal Graph Convolutional Networks for Traffic Flow Forecasting (AAAI19)
+1. Multi-Range Attentive Bicomponent Graph Convolutional Network for Traffic Forecasting (AAAI20)
+1. Spatio-Temporal Graph Structure Learning for Traffic Forecasting (AAAI20)
 
 
 # Reading List on POI Recommendation ([LIST](https://github.com/DeepGraphLearning/RecommenderSystems/blob/master/readingList.md))
@@ -63,4 +65,11 @@
 1. :white_check_mark: Hongteng Xu et al. Scalable Gromov-Wasserstein Learning for Graph Partitioning and Matching (NIPS19) ([PDF](https://arxiv.org/pdf/1905.07645v1.pdf))	
 1. :white_check_mark: Tianshu Yu et al. Learning Deep Graph Matching with Channel-independent Embedding and Hungarian Attention (ICLR20) ([PDF](https://openreview.net/forum?id=rJgBd2NYPH))
 1. :white_check_mark: Matthias Fey et al. Deep Graph Matching Consensus (ICLR20) ([PDF](https://openreview.net/forum?id=HyeJf1HKvS))
-
+1. :white_check_mark: Andre F. T. Martins, Ramon F. Astudillo.  From Softmax to Sparsemax: A Sparse Model of Attention and Multi-Label Classification (ICML16) ([PDF](https://arxiv.org/pdf/1602.02068.pdf))
+1. :white_check_mark: On Controllable Sparse Alternatives to Softmax (NIPS18) ([PDF](https://arxiv.org/pdf/1810.11975.pdf))
+1. :white_check_mark: A regularized framework for sparse and structured neural attention (NIPS17) ([PDF](https://arxiv.org/pdf/1705.07704.pdf))
+1. :white_check_mark: Learning sparse neural networks through L0 regularization (ICLR18) ([PDF](https://openreview.net/pdf?id=H1Y8hhg0b))
+1. :white_check_mark: Adaptively Sparse Transformers (EMNLP19) ([PDF](https://arxiv.org/pdf/1909.00015.pdf))
+1. :white_check_mark: Sparse sequence-to-sequence models (ACL19) ([PDF](https://www.aclweb.org/anthology/P19-1146.pdf))
+1. :white_check_mark: Learning classifiers with Fenchel-Young losses: Generalized entropies, margins, and algorithms (AISTATS19) ([PDF](https://arxiv.org/pdf/1805.09717.pdf))
+1. :white_check_mark: Learning with Fenchel-Young losses (JMLR20) ([PDF](http://jmlr.org/papers/volume21/19-021/19-021.pdf))
