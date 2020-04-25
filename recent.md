@@ -16,6 +16,7 @@
 1. Spatial-Temporal Synchronous Graph Convolutional Networks: A New Framework for Spatial-Temporal Network Data Forecasting (AAAI20)
 1. Deep Spatial–Temporal 3D Convolutional Neural Networks for Traffic Data Forecasting (TITS)
 1. Towards Fine-grained Flow Forecasting: A Graph Attention Approach for Bike Sharing Systems (WWW20)
+1. Traffic Flow Prediction via Spatial Temporal Graph Neural Network (WWW20)
 
 # Reading List of Sparse and Structural Attention
 1. :white_check_mark: Andre F. T. Martins, Ramon F. Astudillo.  From Softmax to Sparsemax: A Sparse Model of Attention and Multi-Label Classification (ICML16) ([PDF](https://arxiv.org/pdf/1602.02068.pdf))
